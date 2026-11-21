@@ -271,7 +271,7 @@
                     <p>Only while running Havoc with <b>EyeOnGame</b> and <b>MakeIt P2P Handshake</b> enabled in a multiplayer lobby, the mods perform local integrity checks and share the verification result directly with your lobby host over the game’s P2P session:</p>
                     <ul>
                         <li>SHA-256 hash of <code>GameAssembly.dll</code> and list/digest of <code>.dll</code> files inside the game’s <code>Mods/</code> folder.</li>
-                        <li>Presence of prohibited mod-loader entries in the game root (e.g., BepInEx/proxy DLLs), <code>author.flag</code>, active cinematic Freecam object, modified <code>Time.timeScale</code>, and names of running processes matching known debugging/cheating tools.</li>
+                        <li>Presence of prohibited mod-loader entries in the game root (e.g., BepInEx/proxy DLLs), active cinematic Freecam object, modified <code>Time.timeScale</code>, and names of running processes matching known debugging/cheating tools.</li>
                     </ul>
                     <p style="margin-top:8px">This check runs locally in memory and is used strictly for lobby integrity; MakeIt does not upload or store your process list on any central database.</p>
                 </article>
