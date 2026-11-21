@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — Havoc Rebirth | MakeIt</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Roboto:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-dark: #0f1214;
+            --bg-card: #161a1d;
+            --accent: #ff5500;
+            --accent-glow: rgba(255, 85, 0, 0.22);
+            --text-main: #ffffff;
+            --text-dim: #9ba3af;
+            --border: #23292e;
+            --mono: 'JetBrains Mono', ui-monospace, monospace;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--bg-dark);
+            background-image: radial-gradient(700px 380px at 80% 0%, rgba(255, 85, 0, 0.1), transparent 70%);
+            color: var(--text-main);
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+        }
+        h1, h2, h3, .logo { font-family: 'Manrope', sans-serif; font-weight: 800; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 25px; }
+        a { text-decoration: none; color: inherit; transition: 0.25s; }
+
+        header {
+            padding: 18px 0;
+            border-bottom: 1px solid var(--border);
+            background: rgba(15, 18, 20, 0.88);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+        .logo { font-size: 26px; letter-spacing: -1.5px; text-transform: uppercase; }
+        .logo span { color: var(--accent); }
+        .nav-links { display: flex; align-items: center; gap: 26px; }
+        .nav-links a { font-size: 14px; font-weight: 600; color: var(--text-dim); }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+        .nav-dl {
+            padding: 8px 16px; border-radius: 6px;
+            background: var(--accent); color: #fff;
+            font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;
+        }
+        .nav-dl:hover { filter: brightness(1.1); box-shadow: 0 6px 18px var(--accent-glow); }
+
+        .tos-hero { padding: 64px 0 36px; border-bottom: 1px solid var(--border); margin-bottom: 36px; }
+        .tos-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(255, 85, 0, 0.1); color: var(--accent);
+            border: 1px solid var(--accent-glow);
+            padding: 5px 13px; border-radius: 999px;
+            font: 700 11px var(--mono); text-transform: uppercase; margin-bottom: 16px;
+        }
+        .tos-hero h1 { font-size: 2.9rem; letter-spacing: -1.5px; margin-bottom: 10px; }
+        .tos-hero h1 span { color: var(--accent); }
+        .tos-meta { font: 12.5px var(--mono); color: var(--text-dim); }
+
+        .tos-stack { display: flex; flex-direction: column; gap: 18px; padding-bottom: 72px; }
+        .tos-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 26px 28px;
+        }
+        .tos-card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .tos-num { font: 700 13px var(--mono); color: var(--accent); }
+        .tos-card p, .tos-card li { font-size: 14.5px; color: var(--text-dim); }
+        .tos-card ul { margin: 10px 0 0 20px; display: flex; flex-direction: column; gap: 6px; }
+        .tos-card code {
+            font: 12.5px var(--mono);
+            background: rgba(255,255,255,0.06);
+            padding: 2px 6px; border-radius: 5px; color: #fff;
+        }
+        .tos-card a { color: var(--accent); text-decoration: underline; }
+
+        footer { padding: 44px 0; border-top: 1px solid var(--border); text-align: center; }
+        .copyright { color: var(--text-dim); font-size: 13px; }
+
+        @media (max-width: 680px) {
+            .nav-links { display: none; }
+            .tos-hero h1 { font-size: 2.2rem; }
+            .tos-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/hr" class="logo">MAKE<span>IT</span></a>
+                <div class="nav-links">
+                    <a href="https://mwkdev.pp.ua/">Home</a>
+                    <a href="/hr">Havoc Rebirth</a>
+                    <a href="/hr#mods">Mods</a>
+                    <a href="/hr/tos" class="active">TOS</a>
+                </div>
+                <a href="/hr" class="nav-dl"><i class="fas fa-arrow-left"></i> Back to Launcher</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="tos-hero">
+            <div class="tos-badge">Legal &amp; Community Rules</div>
+            <h1>Terms of <span>Service</span></h1>
+            <div class="tos-meta">Last updated: November 2026 · Applies to Havoc Rebirth Launcher, MakeIt Mods &amp; Services</div>
+        </section>
+
+        <section class="tos-stack">
+            <article class="tos-card">
+                <h2><span class="tos-num">01</span> Independent Community Project</h2>
+                <p>Havoc Rebirth Launcher and MakeIt Mods are independent, community-built tools created for <a href="https://store.steampowered.com/app/2149290/Havoc/" target="_blank">Havoc</a>. MakeIt Squad is not affiliated with, endorsed by, or sponsored by the original game developers or publishers. You must own a legitimate copy of Havoc to use the launcher.</p>
+            </article>
+
+            <article class="tos-card">
+                <h2><span class="tos-num">02</span> Launcher &amp; Mod Integrity</h2>
+                <ul>
+                    <li>Official mods listed in the MakeIt manifest are distributed with SHA-256 checksums for integrity verification.</li>
+                    <li>You may import third-party <code>.dll</code> modifications locally via <b>+ Import .dll</b> at your own risk. MakeIt Squad is not responsible for crashes, bans, or issues caused by unverified third-party DLLs.</li>
+                    <li>Switching to <b>vanilla</b> mode disables MelonLoader cleanly (<code>version.dll</code>) so you can play standard unmodded sessions.</li>
+                </ul>
+            </article>
+
+            <article class="tos-card">
+                <h2><span class="tos-num">03</span> Fair Play, P2P Handshake &amp; EyeOnGame</h2>
+                <p>When joining MakeIt-hosted or protected multiplayer lobbies using <b>MakeIt P2P Handshake</b> and <b>EyeOnGame</b>:</p>
+                <ul>
+                    <li>Your client shares a cryptographic verification report confirming your <code>Mods/</code> folder digest, <code>GameAssembly.dll</code> hash, and runtime checks (such as forbidden debugging/injection tools, time-scale tampering, <code>author.flag</code>, or active Freecam).</li>
+                    <li>Tools such as <b>Havoc Media</b> (Freecam / Winter Mode) and Map Author mode (<code>author.flag</code> / Noclip) are strictly for cinematic recording, offline testing, and map creation — not unfair gameplay advantages.</li>
+                    <li>Lobby hosts reserve the right to kick or deny entry to unverified or flagged clients.</li>
+                </ul>
+            </article>
+
+            <article class="tos-card">
+                <h2><span class="tos-num">04</span> Privacy &amp; Discord Integration</h2>
+                <ul>
+                    <li>If you sign in with Discord (optional), the launcher uses the <code>identify</code> scope only to read your Discord User ID, display name, and avatar URL for profile display and Closed Beta / Admin mod access checks.</li>
+                    <li>Your configuration, launch count, and preferences are stored locally on your machine in <code>%APPDATA%\HavocLauncher</code> (or <code>HavocData\</code> in portable mode).</li>
+                    <li>Discord Rich Presence runs locally through your desktop Discord client and can be disabled anytime in Settings.</li>
+                </ul>
+            </article>
+
+            <article class="tos-card">
+                <h2><span class="tos-num">05</span> Custom Maps, Skins &amp; User Content</h2>
+                <p>You are solely responsible for custom <code>.obj</code> maps, textures, skins, and graffiti images you load or share. Do not distribute malicious files, copyrighted assets without permission, or offensive content in community lobbies.</p>
+            </article>
+
+            <article class="tos-card">
+                <h2><span class="tos-num">06</span> Disclaimer of Warranty</h2>
+                <p>The launcher, MelonLoader automation, and community mods are provided <b>"AS IS"</b> without warranties of any kind. Game updates may temporarily break mod compatibility. MakeIt Squad may update the mod catalog, security checks, or these Terms at any time.</p>
+                <p style="margin-top:10px">Questions or bug reports? Reach us on <a href="https://discord.gg/bJEndeWDgk" target="_blank">Discord</a> or <a href="https://github.com/masik52xd" target="_blank">GitHub</a>.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="copyright">&copy; 2026 MAKEIT ENGINE &amp; HAVOC REBIRTH · <a href="/hr" style="color:var(--accent);text-decoration:underline;">Back to Havoc Rebirth</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
